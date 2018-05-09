@@ -1,5 +1,5 @@
 use v6.c;
-unit module P5reset:ver<0.0.1>:auth<cpan:ELIZABETH>;
+unit module P5reset:ver<0.0.2>:auth<cpan:ELIZABETH>;
 
 proto sub reset(|) is export {*}
 multi sub reset(--> 1) { }
@@ -18,9 +18,11 @@ multi sub reset(Str() $pattern --> 1) {
     }
 
     for CALLER::OUR::.kv -> \key, \value {
-        with '$@%'.index(key.substr(0,1)) {
-            with $letters.index(key.substr(1,1)) {
-                value = value ~~ Iterable || value ~~ Associative ?? Empty !! Nil
+        if '$@%'.contains(key.substr(0,1)) {
+            if $letters.contains(key.substr(1,1)) {
+                value = value ~~ Iterable || value ~~ Associative
+                  ?? Empty
+                  !! Nil
             }
         }
     }

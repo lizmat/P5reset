@@ -2,5 +2,8 @@ Revision history for P5reset
 
 {{$NEXT}}
 
+0.0.2  2018-05-09T23:35:17+02:00
+    - use .contains instead if .index, doesn't need 'with'
+
 0.0.1  2018-05-07T12:15:23+02:00
     - Initial version
