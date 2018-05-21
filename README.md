@@ -19,7 +19,30 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `reset` of Perl 5 as closely as possible.
+This module tries to mimic the behaviour of the `reset` function of Perl 5 as closely as possible.
+
+ORIGINAL PERL 5 DOCUMENTATION
+=============================
+
+    reset EXPR
+    reset   Generally used in a "continue" block at the end of a loop to clear
+            variables and reset "??" searches so that they work again. The
+            expression is interpreted as a list of single characters (hyphens
+            allowed for ranges). All variables and arrays beginning with one
+            of those letters are reset to their pristine state. If the
+            expression is omitted, one-match searches ("?pattern?") are reset
+            to match again. Only resets variables or searches in the current
+            package. Always returns 1. Examples:
+
+                reset 'X';      # reset all X variables
+                reset 'a-z';    # reset lower case variables
+                reset;          # just reset ?one-time? searches
+
+            Resetting "A-Z" is not recommended because you'll wipe out your
+            @ARGV and @INC arrays and your %ENV hash. Resets only package
+            variables; lexical variables are unaffected, but they clean
+            themselves up on scope exit anyway, so you'll probably want to use
+            them instead. See "my".
 
 PORTING CAVEATS
 ===============

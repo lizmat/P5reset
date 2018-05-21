@@ -1,5 +1,6 @@
 use v6.c;
-unit module P5reset:ver<0.0.2>:auth<cpan:ELIZABETH>;
+
+unit module P5reset:ver<0.0.3>:auth<cpan:ELIZABETH>;
 
 proto sub reset(|) is export {*}
 multi sub reset(--> 1) { }
@@ -46,8 +47,30 @@ P5reset - Implement Perl 5's reset() built-in
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<reset> of Perl 5 as closely as
-possible.
+This module tries to mimic the behaviour of the C<reset> function of Perl 5
+as closely as possible.
+
+=head1 ORIGINAL PERL 5 DOCUMENTATION
+
+    reset EXPR
+    reset   Generally used in a "continue" block at the end of a loop to clear
+            variables and reset "??" searches so that they work again. The
+            expression is interpreted as a list of single characters (hyphens
+            allowed for ranges). All variables and arrays beginning with one
+            of those letters are reset to their pristine state. If the
+            expression is omitted, one-match searches ("?pattern?") are reset
+            to match again. Only resets variables or searches in the current
+            package. Always returns 1. Examples:
+
+                reset 'X';      # reset all X variables
+                reset 'a-z';    # reset lower case variables
+                reset;          # just reset ?one-time? searches
+
+            Resetting "A-Z" is not recommended because you'll wipe out your
+            @ARGV and @INC arrays and your %ENV hash. Resets only package
+            variables; lexical variables are unaffected, but they clean
+            themselves up on scope exit anyway, so you'll probably want to use
+            them instead. See "my".
 
 =head1 PORTING CAVEATS
 
