@@ -2,6 +2,9 @@ Revision history for P5reset
 
 {{$NEXT}}
 
+0.0.4  2019-11-10T19:49:00+01:00
+    - Changed Perl 6 to Raku, and Perl 5 to Perl
+
 0.0.3  2018-05-21T21:28:12+02:00
     - Added original Perl 5 documentation
 

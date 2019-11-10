@@ -1,6 +1,6 @@
 use v6.c;
 
-unit module P5reset:ver<0.0.3>:auth<cpan:ELIZABETH>;
+unit module P5reset:ver<0.0.4>:auth<cpan:ELIZABETH>;
 
 proto sub reset(|) is export {*}
 multi sub reset(--> 1) { }
@@ -33,7 +33,7 @@ multi sub reset(Str() $pattern --> 1) {
 
 =head1 NAME
 
-P5reset - Implement Perl 5's reset() built-in
+P5reset - Implement Perl's reset() built-in
 
 =head1 SYNOPSIS
 
@@ -47,10 +47,10 @@ P5reset - Implement Perl 5's reset() built-in
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<reset> function of Perl 5
+This module tries to mimic the behaviour of the C<reset> function of Perl
 as closely as possible.
 
-=head1 ORIGINAL PERL 5 DOCUMENTATION
+=head1 ORIGINAL PERL DOCUMENTATION
 
     reset EXPR
     reset   Generally used in a "continue" block at the end of a loop to clear
@@ -74,7 +74,7 @@ as closely as possible.
 
 =head1 PORTING CAVEATS
 
-Since Perl 6 doesn't have the concept of C<?one time searches?>, the no-argument
+Since Raku doesn't have the concept of C<?one time searches?>, the no-argument
 form of C<reset> will not reset any variables at all.
 
 =head1 AUTHOR
@@ -86,9 +86,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

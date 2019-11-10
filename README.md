@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/lizmat/P5reset.svg?branch=master)](https://travis-ci.org/lizmat/P5reset)
-
 NAME
 ====
 
-P5reset - Implement Perl 5's reset() built-in
+P5reset - Implement Perl's reset() built-in
 
 SYNOPSIS
 ========
@@ -19,10 +17,10 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `reset` function of Perl 5 as closely as possible.
+This module tries to mimic the behaviour of the `reset` function of Perl as closely as possible.
 
-ORIGINAL PERL 5 DOCUMENTATION
-=============================
+ORIGINAL PERL DOCUMENTATION
+===========================
 
     reset EXPR
     reset   Generally used in a "continue" block at the end of a loop to clear
@@ -47,7 +45,7 @@ ORIGINAL PERL 5 DOCUMENTATION
 PORTING CAVEATS
 ===============
 
-Since Perl 6 doesn't have the concept of `?one time searches?`, the no-argument form of `reset` will not reset any variables at all.
+Since Raku doesn't have the concept of `?one time searches?`, the no-argument form of `reset` will not reset any variables at all.
 
 AUTHOR
 ======
@@ -59,9 +57,9 @@ Source can be located at: https://github.com/lizmat/P5reset . Comments and Pull 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
