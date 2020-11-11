@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 use P5reset;
 
@@ -21,4 +21,4 @@ nok $a, 'was $a still reset';
 nok @b, 'was @b reset';
 nok %c, 'was %c reset';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4
