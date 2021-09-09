@@ -1,5 +1,5 @@
 {
-  "auth": "cpan:ELIZABETH",
+  "auth": "zef:lizmat",
   "authors": [
     "Elizabeth Mattijsen"
   ],
@@ -12,7 +12,7 @@
   "name": "P5reset",
   "perl": "6.c",
   "provides": {
-    "P5reset": "lib/P5reset.pm6"
+    "P5reset": "lib/P5reset.rakumod"
   },
   "resources": [
   ],
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.5"
+  "version": "0.0.6"
 }

@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/P5reset/workflows/test/badge.svg)](https://github.com/lizmat/P5reset/actions)
+
 NAME
 ====
 
@@ -50,14 +52,14 @@ Since Raku doesn't have the concept of `?one time searches?`, the no-argument fo
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/P5reset . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

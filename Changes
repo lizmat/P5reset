@@ -2,6 +2,12 @@ Revision history for P5reset
 
 {{$NEXT}}
 
+0.0.6  2021-09-09T17:32:43+02:00
+    - Change file extension to .rakumod
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.5  2020-11-11T22:25:08+01:00
     - Change name of distribution
     - Force to highest possible Raku version
