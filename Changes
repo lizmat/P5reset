@@ -2,6 +2,10 @@ Revision history for P5reset
 
 {{$NEXT}}
 
+0.0.7  2023-08-07T20:13:24+02:00
+    - Update test file extension
+    - Added sponsor link
+
 0.0.6  2021-09-09T17:32:43+02:00
     - Change file extension to .rakumod
     - Migrate to zef ecosystem

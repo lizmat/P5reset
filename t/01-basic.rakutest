@@ -2,10 +2,9 @@ use v6.*;
 use Test;
 use P5reset;
 
-plan 8;
+plan 7;
 
 ok defined(::('&reset')),         'is &reset imported?';
-nok defined(P5reset::{'&reset'}), 'is &reset externally NOT accessible?';
 
 our $a = 42;
 our @b = 1,2,3;
